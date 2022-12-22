@@ -29,6 +29,7 @@ abstract class Model
       $password =  Config::DB_PASSWORD;
 
       try {
+        
         $db = new PDO("mysql:host=$host;dbname=$dbname;chartset=utf8", $username, $password);
 
         return $db;
